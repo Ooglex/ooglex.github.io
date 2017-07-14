@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alex Abimbola</title><a> <a class="refer" href="file:///C:/Users/AMFA/Desktop/Me/Coursework/Unit%2020/Personal%20Website/index.html">
+ <!-- I used this so my name at the top of the page would refresh back to the top of the page-->
+
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="main.css">
+
+  <!-- I used these to relate to the different related pages for the Bootstrap frame and also for my CSS Code -->
+<body>
+  <header class="container">
+   <div class="row">
+   <h1 class="col-sm-4">Alex Abimbola</h1>
+     <nav class="col-sm-8 text-right">
+      <a class="refer" href="file:///C:/Users/AMFA/Desktop/Me/Coursework/Unit%2020/Personal%20Website/index.html#traget"><p>Me</p></a>
+      <a class="refer" href="file:///C:/Users/AMFA/Desktop/Me/Coursework/Unit%2020/Personal%20Website/index.html#target"><p>Contact</p></a>
+
+<!-- This is for the top part of the page. It's used for my name (which is the title) as well as the sub headings both of which I made to link to the page, I made "Me" connect to the first row of rollover images and made "Contact" link to the form-->
+    </nav>
+  </div> 
+</header>
+
+<section class="jumbotron">
+<div class="container">
+  <div class="row text-center">
+    <h2>Personal Website</h2>
+      <h3>The 19 Year Old Extraodinaire</h3>
+
+    <a class="btn btn-primary" href="https://www.linkedin.com/in/alexander-abimbola-2b332811b/" role="button">Want more?</a>
+    </div>
+  </div>
+</section>
+  <section class="container">
+  <div class="row">
+    <figure class="col-sm-6">
+
+<!-- I made this for the top banner which has my own image with a button that links to my linkedin profile. I also made it so the button changes colour when a mouse goes over it with the CSS -->
+
+<a id="traget"></a> 
+      <p>Humour</p> 
+      <img src="skank.jpg" class="img-thumbnail" class="img-fluid" onmouseover="firstImg(0)" onmouseout="firstImg(1)" id="image1">
+    </figure>
+    <figure class="col-sm-6">
+
+ <p>Creativity</p>
+      <img src="clown.jpg" class="img-thumbnail" class="img-fluid" onmouseover="secondImg(0)" onmouseout="secondImg(1)" id="image2">
+    </figure>
+  </div>
+  <div class="row">
+    <figure class="col-sm-12" >
+
+<!-- These are my images which I had headers for to show a couple of my traits. I wanted to have them rollover so I used the classes to link it with my javascript for it to work -->
+ 
+    <p>People skills</p>
+      <div class="cntainer">
+            <img src="cool.jpg" class="img-thumbnail" class="img-fluid" class="image">
+            <div class="overlay">
+            <div class="text">
+                <p>Ambitious Certified Salesforce Administrator who has spent the last year as an apprentice working on optimising business processes. This year has allowed for exponential growth career wise and personally, spending my time in work learning about how to be a competent member of a workforce and getting to grips with Salesforce and gaining certifications, namely the ADM 201 with the Platform App Builder and Advanced Admin (ADM211) - all with a year of rich experience in something I knew nothing about prior to September 2016. </p> 
+            </div>
+            </div>
+        </div>
+
+  <!-- Here is my hover overlay image. As this picture is my largest I thought it would be good to add text over it and make it somewhat interactive. I took the first paragraph from my LinkedIn Bio. -->
+
+    </figure>
+  </div>
+</section>
+
+  <div class="container">
+  <form action="/action_page.php" >
+  <form name="myForm" action="/action_page_post.php" onsubmit="return validateForm();" method="post">
+    <a id="target"></a>
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name...">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+
+    <form>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" class="form-control" id="email">
+  </div>
+
+  <!-- THis is my validated email address. As I'm already using bootstrap, I was able to create a validated email address field using 'bootstrap form' -->
+
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="UK">UK</option>
+      <option value="US">US</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  <!-- The above is for my form, styled in CSS. With the HTML I was able to change the labels and the option values for the drop down coutry field, I also made it so the form would validate upon pressing the submit button (which changes colour depending on if the mouse is over it or not)  -->
+
+  </form>
+</div>
+  <footer class="container">
+  <div class="row">
+    <p class="col-sm-4">&copy; 2017 Alex Abimbola</p>
+    <ul class="col-sm-8">
+  </div>
+</footer>
+</body>
+<script src="javascript.js" type="text/javascript"></script>
+</html>
+
+  <!-- This is for the footer, just to add a little professionalism to my page. The last part is to reference my javascript page -->
